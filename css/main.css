@@ -1,0 +1,102 @@
+body {
+  /* background-image: url('images/lines.png'); */
+  min-height: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 9999999;
+}
+.navbar a {
+  color: white;
+}
+
+.news .card {
+  width: 18rem;
+  margin: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  color: black;
+}
+.news .card:hover {
+  box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important;
+  transition: box-shadow 0.2s ease-in-out;
+  text-decoration: none;
+}
+.news .card .card-body {
+  max-height: 198px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.news .card img {
+  height: 11rem;
+  object-fit: cover;
+}
+.grad {
+  height: 20px;
+}
+.card-login {
+  margin-top: 10%;
+  padding: 25px;
+  width: 25rem;
+}
+.card-login > h2 {
+  text-align: center;
+}
+.card-login button {
+  display: block;
+  margin: 0 auto;
+}
+
+#flux-card {
+  margin: 20px;
+  max-width: 60rem;
+  padding: 20px;
+  text-align: center;
+}
+#setting-card {
+  margin: 20px;
+  max-width: 60rem;
+  padding: 20px;
+  text-align: center;
+}
+.flux-el .btn-del {
+  margin-right: 0px;
+  margin-left: auto;
+}
+.flux-el > a {
+  margin-left: 30px;
+  color: gray;
+}
+.form-card {
+  margin: 20px 0;
+  padding: 20px;
+}
+.form-card h4 {
+  margin-bottom: 25px;
+}
+
+.info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px;
+  border-radius: 5px 0 5px 0;
+  background-color: rgba(0,0,0,.75);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.news .card:hover .info {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#pagination {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#pagination > div > a {
+  margin: 0 10px;
+}
